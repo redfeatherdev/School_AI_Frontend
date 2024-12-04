@@ -1,0 +1,99 @@
+/**************************************
+    Default Styles
+***************************************/
+@use 'default/variables';
+@use 'default/mixins';
+@use 'default/reset';
+@use 'default/typography';
+@use 'default/extend';
+@use 'default/animations';
+@use 'default/shortcode';
+@use 'default/spacing';
+@use 'default/common';
+@use 'default/forms';
+
+/**************************************
+    Header Styles
+***************************************/
+@use 'header/header';
+@use 'header/nav';
+@use 'header/header-quote';
+@use 'header/mobilemenu';
+@use 'header/search-popup';
+
+/**************************************
+    Elemnts Styles
+***************************************/
+@use 'elements/button';
+@use 'elements/brands';
+@use 'elements/section-title';
+@use 'elements/section-animation';
+@use 'elements/card';
+@use 'elements/meta';
+@use 'elements/badge';
+@use 'elements/pagination';
+@use 'elements/event';
+@use 'elements/team';
+@use 'elements/service';
+@use 'elements/single-elements';
+@use 'elements/coursesidebar';
+@use 'elements/testimonial';
+@use 'elements/feature';
+@use 'elements/about';
+@use 'elements/newsletter';
+@use 'elements/social-share';
+@use 'elements/backtotop';
+@use 'elements/workshop';
+@use 'elements/video-popup';
+@use 'elements/chooseus';
+@use 'elements/calltoaction';
+@use 'elements/slickslider';
+@use 'elements/winner';
+@use 'elements/counterup';
+@use 'elements/countdown';
+@use 'elements/breadcrumb';
+@use 'elements/masonaryitem';
+@use 'elements/accordion';
+@use 'elements/privacy-policy';
+@use 'elements/not-found';
+@use 'elements/coming-soon';
+@use 'elements/gallery';
+@use 'elements/pricingtable';
+@use 'elements/profile-details';
+@use 'elements/progressbar';
+@use 'elements/contactus';
+@use 'elements/shop';
+@use 'elements/brand';
+@use 'elements/checkout';
+@use 'elements/overall';
+
+/**************************************
+    Blog Styles
+***************************************/
+@use 'blog/blog-grid';
+@use 'blog/sidebar';
+@use 'blog/blog-details';
+@use 'blog/comments';
+
+/**************************************
+    Template Styles
+***************************************/
+@use 'template/banner';
+@use 'template/event-details';
+@use 'template/product-details';
+@use 'template/cart';
+@use 'template/course-details';
+@use 'template/preview';
+
+/**************************************
+    Footer Styles
+***************************************/
+@use 'footer/footer';
+@use 'footer/copyright';
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('../css/eduvibe-font.css');
+@import url('../css/remixicon.css');
+@import url('../css/animation.css');
+@import url('../css/slick.css');
+@import url('../css/slicktheme.css');

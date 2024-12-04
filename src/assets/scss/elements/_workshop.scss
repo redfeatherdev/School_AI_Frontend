@@ -1,0 +1,24 @@
+/*--------------------------
+    Workshop Style One  
+----------------------------*/
+@use '../default/variables';
+
+.workshop-style-1 {
+    .workshop-inner {
+        .description {
+            color: var(--color-white);
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+            @media #{variables.$md-layout} {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            @media #{variables.$sm-layout} {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

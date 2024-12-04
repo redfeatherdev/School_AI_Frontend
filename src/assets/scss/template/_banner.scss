@@ -1,0 +1,279 @@
+/*-----------------------
+ * Banner Style One
+------------------------*/
+@use '../default/variables';
+
+%liststyle {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.height-850 {
+    min-height: 850px;
+    width: 100%;
+    padding: 240px 0 190px;
+
+    @media #{variables.$sm-layout} {
+        min-height: auto;
+        width: 100%;
+        padding: 250px 0;
+    }
+}
+
+.height-940 {
+    min-height: 940px;
+    width: 100%;
+
+    @media #{variables.$sm-layout} {
+        min-height: auto;
+        width: 100%;
+        padding: 250px 0;
+    }
+}
+
+.banner {
+    position: relative;
+    background-image: url(/images/bg/banner.jpg);
+    z-index: 2;
+
+    @media #{variables.$lg-layout} {
+        height: auto;
+        min-height: auto;
+        padding: 100px 0;
+        padding-top: 150px;
+    }
+
+    @media #{variables.$md-layout} {
+        height: auto;
+        min-height: auto;
+        padding: 100px 0;
+        padding-top: 150px;
+    }
+
+    @media #{variables.$sm-layout} {
+        height: auto;
+        min-height: auto;
+        padding: 100px 0;
+        padding-top: 150px;
+    }
+
+    .banner-right-content {
+        position: relative;
+        margin-top: 138px;
+
+        @media #{variables.$smlg-device} {
+            margin-top: 0px;
+        }
+
+        .edu-card {
+            min-width: 272px;
+
+            @media #{variables.$sm-layout} {
+                min-width: inherit;
+            }
+        }
+    }
+
+    .banner-left-content {
+        margin-top: 120px;
+
+        @media #{variables.$smlg-device} {
+            margin-top: 0;
+        }
+    }
+
+    .inner {
+        .content {
+            .pre-title {
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                font-weight: 800;
+                font-size: 16px;
+                line-height: 26px;
+                color: var(--color-primary);
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .title {
+                font-weight: 800;
+                font-size: 72px;
+                line-height: 1.25;
+                margin-bottom: 30px;
+
+                @media #{variables.$lg-layout} {
+                    font-size: 52px;
+                    margin-bottom: 20px;
+                }
+
+                @media #{variables.$md-layout} {
+                    font-size: 45px;
+                }
+
+                @media #{variables.$sm-layout} {
+                    font-size: 38px;
+                }
+            }
+
+            .description {
+                margin-bottom: 60px;
+                padding-left: 20px;
+                position: relative;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 32px;
+
+                @media #{variables.$lg-layout} {
+                    margin-bottom: 30px;
+                }
+
+                @media #{variables.$md-layout} {
+                    margin-bottom: 30px;
+                }
+
+                @media #{variables.$sm-layout} {
+                    margin-bottom: 30px;
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    width: 2px;
+                    height: 73%;
+                    background: var(--color-primary);
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+
+    .work-shop {
+        min-width: 193px;
+        max-width: 193px;
+        background: var(--color-white);
+        padding: 20px;
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        margin: 25px -15px 0 auto;
+
+        @media #{variables.$lg-layout} {
+            min-width: 100%;
+            max-width: 100%;
+            margin-right: 0;
+        }
+
+        @media #{variables.$md-layout} {
+            min-width: 100%;
+            max-width: 100%;
+            margin-right: 0;
+        }
+
+        @media #{variables.$sm-layout} {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        .inner {
+            .thumbnail {
+                img {
+                    width: 40px;
+                    height: 40px;
+                    object-fit: cover;
+                }
+            }
+
+            .content {
+                .title {
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 28px;
+                    margin: 10px 0 0;
+                }
+
+                .time {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 22px;
+                    display: inline-block;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .shape-round {
+        position: absolute;
+        left: -312px;
+        top: 130px;
+        z-index: -1;
+    }
+
+    .scroll-down-btn {
+        position: absolute;
+        top: 100%;
+        left: calc(50% - 30px);
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+
+    .shape-dot-wrapper {
+        .shape {
+            position: absolute;
+            z-index: -1;
+
+            &.shape-1 {
+                top: 97px;
+                left: -189px;
+            }
+
+            &.shape-2 {
+                top: 53px;
+                left: 580px;
+            }
+
+            &.shape-3 {
+                top: 95px;
+                right: -160px;
+            }
+
+            &.shape-4 {
+                bottom: 10px;
+                right: -173px;
+            }
+
+            &.shape-5 {
+                bottom: -23px;
+                left: 654px;
+            }
+
+            &.shape-6 {
+                bottom: -37px;
+                left: -255px;
+            }
+        }
+    }
+
+    .eduvibe-hero-one-video {
+        .thumbnail {
+            margin: 30px -149px 0 -23px;
+
+            @media #{variables.$custom-laptop-device} {
+                margin: 0 -70px 0 -30px;
+            }
+
+            @media #{variables.$smlg-device} {
+                margin: 0 -30px 0 -30px;
+            }
+
+            @media #{variables.$large-mobile} {
+                margin: -30px 0 0 -30px;
+            }
+        }
+    }
+
+}

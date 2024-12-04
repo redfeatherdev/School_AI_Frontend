@@ -1,0 +1,36 @@
+@use "sass:list"; // Import the list module
+
+@mixin clearfix() {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+@mixin config-bg-colors($prefix, $bg-color-...) {
+    @each $i in $bg-color- {
+        .#{$prefix}#{list.nth($i, 1)} {
+            // Use list.nth() instead of nth()
+            background-color: list.nth($i, 2); // Use list.nth() instead of nth()
+        }
+    }
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder {
+        @content;
+    }
+
+    &::-moz-placeholder {
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
